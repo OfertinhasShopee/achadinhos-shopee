@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#086357">
+  <meta name="description" content="Achadinhos de casa e cozinha com descontos todos os dias. Entre gratuitamente no nosso grupo de WhatsApp.">
+  <title>Achadinhos Casa &amp; Cozinha | Ofertas no WhatsApp</title>
+  <style>
+    :root {
+      --ink: #1d2d29;
+      --muted: #53645f;
+      --page: #eee8df;
+      --white: #fff;
+      --green: #20cf68;
+      --green-dark: #086357;
+      --green-deep: #08713f;
+      --teal: #119687;
+      --pale: #e3f6eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: var(--ink);
+      background: radial-gradient(circle at 85% 12%, rgba(32, 207, 104, .10), transparent 28rem), var(--page);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .topbar { background: var(--green-dark); color: white; padding: 19px clamp(20px, 5vw, 64px); }
+    .topbar-inner { width: min(1120px, 100%); margin: auto; display: flex; align-items: center; gap: 18px; }
+    .avatar {
+      width: 76px; height: 76px; flex: 0 0 76px; border-radius: 50%;
+      object-fit: cover; border: 3px solid rgba(255,255,255,.95);
+      box-shadow: 0 0 0 4px rgba(32,207,104,.28); background: #000;
+    }
+    .brand h1 { margin: 0 0 5px; font-size: clamp(21px, 3vw, 29px); line-height: 1.12; letter-spacing: -.55px; }
+    .brand p { margin: 0; color: #d5e9e4; font-size: clamp(15px, 2vw, 19px); }
+    main { padding: clamp(28px, 5vw, 56px) 18px 20px; }
+    .card {
+      position: relative; overflow: hidden; width: min(850px, 100%); margin: 0 auto;
+      padding: clamp(30px, 6vw, 64px); background: var(--white);
+      border: 1px solid rgba(30, 75, 55, .07); border-radius: 30px;
+      box-shadow: 0 22px 65px rgba(36, 51, 44, .10);
+    }
+    .card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 7px; background: linear-gradient(90deg, #0b8f60, #20cf68 55%, #80e6a7); }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px; padding: 9px 17px; margin-bottom: 24px;
+      border-radius: 999px; background: var(--pale); color: var(--green-deep);
+      font-size: 15px; font-weight: 800; letter-spacing: .2px;
+    }
+    .eyebrow-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--green); }
+    h2 { margin: 0 0 20px; max-width: 730px; font-size: clamp(36px, 6vw, 59px); line-height: 1.08; letter-spacing: -1.9px; font-weight: 850; }
+    h2 .accent { color: var(--teal); text-decoration: underline; text-decoration-color: #bcebd0; text-decoration-thickness: 5px; text-underline-offset: 5px; }
+    .intro { max-width: 700px; margin: 0 0 34px; color: var(--muted); font-size: clamp(18px, 2.5vw, 23px); line-height: 1.55; }
+    .benefits { display: grid; gap: 17px; margin: 0 0 38px; padding: 0; list-style: none; }
+    .benefits li { display: grid; grid-template-columns: 42px 1fr; align-items: start; gap: 15px; font-size: clamp(17px, 2.2vw, 21px); line-height: 1.45; }
+    .check { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--green); color: white; font-size: 22px; font-weight: 900; }
+    .cta {
+      display: flex; justify-content: center; align-items: center; gap: 13px; width: 100%; min-height: 88px;
+      padding: 19px 22px; border-radius: 19px; background: var(--green); color: #063c2a;
+      text-decoration: none; text-align: center; font-size: clamp(19px, 3vw, 27px); font-weight: 900; letter-spacing: .1px;
+      box-shadow: 0 7px 0 #0b9c4d, 0 17px 32px rgba(32, 207, 104, .20);
+      transition: transform .18s ease, filter .18s ease;
+    }
+    .cta:hover { transform: translateY(-2px); filter: brightness(1.04); }
+    .cta:active { transform: translateY(4px); box-shadow: 0 3px 0 #0b9c4d; }
+    .cta svg { width: 34px; height: 34px; flex: 0 0 auto; }
+    .hint { margin: 25px auto 0; text-align: center; color: #526b63; font-size: 16px; line-height: 1.5; }
+    .trust { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; margin: 25px 0 0; color: #63766d; font-size: 14px; }
+    .trust span { display: inline-flex; align-items: center; gap: 6px; }
+    footer { width: min(850px, 100%); margin: 28px auto 0; padding: 0 14px 34px; text-align: center; color: #71817b; font-size: 14px; line-height: 1.65; }
+    @media (max-width: 560px) {
+      .topbar { padding: 16px 19px; } .avatar { width: 65px; height: 65px; flex-basis: 65px; }
+      .topbar-inner { gap: 14px; } .card { border-radius: 24px; padding: 34px 25px 32px; }
+      h2 { letter-spacing: -1.2px; } .cta { min-height: 78px; padding: 16px 12px; border-radius: 17px; }
+      .cta svg { width: 29px; height: 29px; } .trust { gap: 9px 14px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <img class="avatar" src="logo.png" alt="Logo Ofertas da Shopee">
+      <div class="brand">
+        <h1>Achadinhos Casa &amp; Cozinha</h1>
+        <p>Grupo de ofertas no WhatsApp</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="card" aria-labelledby="headline">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> GRUPO 100% GRATUITO</div>
+      <h2 id="headline">Receba <span class="accent">ofertas de casa e cozinha</span> direto no seu WhatsApp</h2>
+      <p class="intro">Todo dia a gente separa achadinhos com desconto e manda no grupo. É só entrar e ver.</p>
+      <ul class="benefits">
+        <li><span class="check" aria-hidden="true">✓</span><span>Ofertas novas todos os dias, com preço e link direto</span></li>
+        <li><span class="check" aria-hidden="true">✓</span><span>Utilidades, panelas, organizadores, air fryer e muito mais</span></li>
+        <li><span class="check" aria-hidden="true">✓</span><span>Sem custo nenhum e você sai quando quiser</span></li>
+      </ul>
+      <a class="cta" href="https://chat.whatsapp.com/DfGmRVSTbLW3m74QZsmR5L?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.7A8.5 8.5 0 1 1 20.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M8.4 8.2c.3-.6.6-.6 1-.6h.4c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.7.8c.3.1.4.3.4.5 0 .4-.2 1.1-.7 1.5-.5.4-1.1.6-1.8.5-1.1-.2-2.5-.9-3.8-2.1-1.2-1.1-2-2.5-2.2-3.5-.2-.9.1-1.7.4-2.2Z" fill="currentColor"/>
+        </svg>
+        <span>ENTRAR NO GRUPO GRÁTIS</span>
+      </a>
+      <p class="hint">Toque no botão e confirme a entrada no WhatsApp.</p>
+      <div class="trust"><span>✓ Sem mensalidade</span><span>✓ Links diretos</span><span>✓ Entre quando quiser</span></div>
+    </section>
+    <footer>Esta página não é do WhatsApp nem da Shopee. Alguns links do grupo podem gerar comissão para nós, sem custo extra para você.</footer>
+  </main>
+</body>
+</html>
